@@ -1,0 +1,35 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+
+footer{
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+h3{
+    padding: 1em;
+}
+
+.dl-horizontal dt
+{
+    padding:10px;
+    white-space: normal;
+}
+.dl-horizontal dd
+{
+    padding:10px;
+    white-space: normal;
+}
+
+pre{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.navbar-inverse{
+  border-radius: 0;
+}
+
+body > div.row {
+    margin-right: 0px;
+}
