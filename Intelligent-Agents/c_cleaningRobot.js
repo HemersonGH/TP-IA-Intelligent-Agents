@@ -1,18 +1,12 @@
-/* The general structure is to put the AI code in xyz.js and the visualization
-   code in c_xyz.js. Create a diagram object that contains all the information
-   needed to draw the diagram, including references to the environment&agents.
-   Then use a draw function to update the visualization to match the data in
-   the environment & agent objects. Use a separate function if possible for 
-   controlling the visualization (whether through interaction or animation). 
-   Chapter 2 has minimal AI and is mostly animations.
-   
-   A estrutura geral é colocar o código AI em xyz.js e a visualização
-   código em c_xyz.js. Crie um objeto de diagrama que contenha todas as informações
-   necessário desenhar o diagrama, incluindo referências ao ambiente e aos agentes.
-   Em seguida, use uma função de desenho para atualizar a visualização para coincidir com os dados em
-   os objetos ambiente e agente. Use uma função separada, se possível para
-   controlar a visualização (seja por interação ou animação).
-   O Capítulo 2 tem um mínimo de IA e é principalmente animações. */
+/* 
+    The general structure is to put the AI code in xyz.js and the visualization
+    code in c_xyz.js. Create a diagram object that contains all the information
+    needed to draw the diagram, including references to the environment&agents.
+    Then use a draw function to update the visualization to match the data in
+    the environment & agent objects. Use a separate function if possible for 
+    controlling the visualization (whether through interaction or animation). 
+    Chapter 2 has minimal AI and is mostly animations.
+*/
 
 const SIZE = 100;
 const colors = {
@@ -21,7 +15,6 @@ const colors = {
     actionBackground: 'hsl(0,0%,100%)',
     actionHighlight: 'hsl(150,50%,80%)'
 };
-
 
 /* Create a diagram object that includes the world (model) and the svg
    elements (view) */

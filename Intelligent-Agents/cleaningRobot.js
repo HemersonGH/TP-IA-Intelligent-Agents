@@ -4,6 +4,7 @@ class World {
     constructor(numFloors) {
         this.location = 0;
         this.floors = [];
+        
         for (let i = 0; i < numFloors; i++) {
             this.floors.push({ dirty: false });
         }
@@ -88,22 +89,17 @@ class World {
     }
 }
 
-
 // Rules are defined in code
 function reflexVacuumAgent(world) {
     if (world.floors[world.location].dirty) {
         return 'SUCK';
-    }
-    else if (world.location == 0) {
+    } else if (world.location == 0) {
         return 'RIGHT';
-    }
-    else if (world.location == 1) {
+    } else if (world.location == 1) {
         return 'DOWN';
-    }
-    else if (world.location == 2) {
+    } else if (world.location == 2) {
         return 'UP';
-    }
-    else if (world.location == 3) {
+    } else if (world.location == 3) {
         return 'LEFT';
     }
 }
@@ -112,5 +108,6 @@ function reflexVacuumAgent(world) {
 function tableVacuumAgent(world, table) {
     let location = world.location;
     let dirty = world.floors[location].dirty ? 1 : 0;
+
     return table[location][dirty];
 }
